@@ -7,6 +7,7 @@ services:
       environment: 
         - GF_SERVER_ROOT_URL=http://localhost:30000
         - GF_SECURITY_ADMIN_PASSWORD=123456
+        - TZ="America/Bahia"
       #volumes:
       #   - grafana-storage:/var/lib/grafana
       ports:
@@ -21,4 +22,5 @@ services:
         MYSQL_DATABASE: fiapdb
         MYSQL_USER: fiap
         MYSQL_PASSWORD: 123456
+        TZ: "America/Bahia"
         
